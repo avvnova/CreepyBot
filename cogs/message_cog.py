@@ -54,7 +54,7 @@ class Message(commands.Cog):
                      "Ask again l8r", "OUT FOR LUNCH", "Concentrate and ask again."]
         await ctx.send(f"**Question: ** {question}\n**. . .**\n{random.choice(responses)}")
         
-    @commands.event
+    @commands.Cog.listener()
     async def on_message(self, message):
         if re.search("a+w+\s+man",message) != None:
             await message.channel.send("https://tenor.com/view/minecraft-creeper-physics-aw-man-gif-27216577")

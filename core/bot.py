@@ -1,10 +1,8 @@
-
 from __future__ import annotations
 from typing import Optional
 from logging import getLogger; log = getLogger(__name__)
 from core.config import TOKEN, TEST_CHANNEL_ID, CREEPER
 import discord
-from discord.ext import commands
 from discord import app_commands
 
 # ----------------------------------------------------------------- #

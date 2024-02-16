@@ -2,7 +2,7 @@ from logging import getLogger; logging = getLogger(__name__)
 from discord.ext import commands
 import math
 
-class Math(commands.cog):
+class Math(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         
