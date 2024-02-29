@@ -1,7 +1,9 @@
 from __future__ import annotations
 from typing import Final
-
-TOKEN: Final = "MTAzODE3NzE5NTQyOTk5MDQ5MA.GApF7C.-r2QGs8JzpRfA23OSrGTWJfxAyDPZ8yLuZE-Sc"
+# bot token will be hosted off code once invitations to non-specific servers is implemented
+#TOKEN: Final = "" 
 # must be changed for multi-server functionality
-CREEPER = 610214169647775810
-TEST_CHANNEL_ID = 1194072680790491156
+#Server ID
+#SERVER = 
+#Test Channel ID
+#TEST_CHANNEL_ID = 
