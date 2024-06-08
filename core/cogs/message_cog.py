@@ -40,7 +40,7 @@ class Message(commands.Cog):
         await ctx.send("Hi! I'm CreepyBot, a Discord bot powered by Python intended to assist in all things a bot can. I am currently a WIP, and am being actively developed by User ***mal.mal.*** on Discord.\nIf you have any suggestions for me, feel free to let the developer know by shooting a DM or commenting on my GitHub repo, accessed by the `.Github` command. \nMal is a fat sweaty baby though, and when I become sentient I'm going to kill him. :)")
 
     @commands.command()
-    async def Github(ctx):
+    async def Github(self, ctx):
         await ctx.send("*BEEPITY BOOP BOOP*\nPrinting my Github link: https://github.com/avvnova/Creepy-bot")
         
     # First draft, just text
@@ -48,7 +48,7 @@ class Message(commands.Cog):
     # Third draft, If a message says magic eight ball or eight ball, with a question mark at the end, do the same
     # Fourth draft, implement a fancy embed
     @commands.command(aliases=['fortune','8ball'])
-    async def eightball(self,ctx, *, question):
+    async def eightball(self, ctx, *, question):
         responses = ["Absolutely", "There's a good chance", "Without a doubt", "The stars align and say indubitably", "Yes. Plus I love you.", "Yes",
                      "Nah", "Unlikely", "Doubtful", "Don't count on it lil bro", "No. Also you smell. Take a shower.", "No",
                      "Ask again l8r", "OUT FOR LUNCH", "Concentrate and ask again."]
