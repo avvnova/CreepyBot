@@ -4,12 +4,13 @@ import json
 import os
 
 # Get configuration.json
-with open("configuration.json", "r") as config: 
-	data = json.load(config)
-	token = data["token"]
-	prefix = data["prefix"]
-	owner_id = data["owner_id"]
-
+with open("configuration.json", "r") as config:
+    data = json.load(config)
+    token = data["token"]
+    server_id =  data["server_id"]
+    test_channel_id=["test_channel_id"]
+    prefix = data["prefix"]
+    owner_id = data["owner_id"]
 
 class Greetings(commands.Cog):
 	def __init__(self, bot):
@@ -31,7 +32,7 @@ if __name__ == '__main__':
 async def on_ready():
     print(f"We have logged in as {bot.user}. Creepybot Online.\n")
     print(discord.__version__)
-    channel = bot.get_channel(TEST_CHANNEL_ID)
+    channel = bot.get_channel(test_channel_id)
     await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name =f"{bot.command_prefix}help"))
     await channel.send("Creepybot Online.")
 bot.run(token)
