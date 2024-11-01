@@ -1,12 +1,4 @@
-from __future__ import annotations
-from typing import Optional
-from logging import getLogger; log = getLogger(__name__)
-import asyncio, os
 
-import discord
-from discord.ext import commands
-
-from config import TEST_CHANNEL_ID
 # ----------------------------------------------------------------- #
 discord.utils.setup_logging()
 TOKEN = os.environ['token']
