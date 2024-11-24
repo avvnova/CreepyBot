@@ -1,0 +1,31 @@
+{
+  "name": "creepybot",
+  "version": "2.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "adrian velez villanueva",
+  "license": "ISC",
+  "description": "Discord.js bot created for friends' server as a fun side project.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avvnova/CreepyBot.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "javascript",
+    "node"
+  ],
+  "bugs": {
+    "url": "https://github.com/avvnova/CreepyBot/issues"
+  },
+  "homepage": "https://github.com/avvnova/CreepyBot#readme",
+  "dependencies": {
+    "discord.js": "^14.16.3"
+  },
+  "devDependencies": {
+    "eslint": "^9.15.0"
+  }
+}
